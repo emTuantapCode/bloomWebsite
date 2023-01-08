@@ -1,3 +1,30 @@
+@font-face {
+    font-family: myFont-Regular;
+    src: url(/asset/font/Font/Font_full/Regular.otf);
+}
+
+@font-face {
+    font-family: myFont-Bold;
+    src: url(/asset/font/Font/Font_full/Bold.otf);
+}
+
+@font-face {
+    font-family: myFont-Italic;
+    src: url(/asset/font/Font/Font_full/Italic.otf);
+}
+
+@font-face {
+    font-family: myFont-Medium;
+    src: url(/asset/font/Font/Font_full/Medium.otf);
+}
+
+@font-face {
+    font-family: myFont-Medium_Italic;
+    src: url(/asset/font/Font/Font_full/Medium_Italic.otf);
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -59,6 +86,7 @@ html{ overflow-x: hidden;}
     border-bottom: 1px solid #707070;
     margin: 0;
     z-index: 999999999;
+    font-family: myFont-Regular!important;
 }
 
 input {
@@ -87,18 +115,25 @@ input {
 }
 
 .content-nav > div {
+    width: min-content;
     padding: 12px 0;
     height: 40px;
 }
 
-.content-nav > div:hover{
+.content-nav > div > div {
+    width: fit-content;
+    margin: 0 auto;
+    padding-bottom: 4px;
+}
+
+.content-nav > div:hover > div{
     border-bottom: 5px solid #396857;
     cursor: pointer;
 }
 
 #slider{
     width: 100%;
-    height: 980px;
+    height: 1215px;
     background-image: url("./asset/anh\ bia\ do\ an12.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -108,6 +143,7 @@ input {
     padding-top: 240px;
     padding-left: 120px;
     color: #396857;
+    font-family: myFont-Medium;
 }
 
 .content-slider > h1 {
@@ -121,6 +157,7 @@ input {
     padding: 10px 66px;
     border: 2px solid #396857;
     border-radius: 12px;
+    font-family: myFont-Bold;
 }
 .button-header:hover{
     cursor: pointer;
@@ -131,13 +168,15 @@ input {
 .section {
     position: relative;
     width: 80%;
-    margin: 80px auto;
+    margin: 40px auto;
 }
 
 .header-content {
     text-align: center;
     font-size: 60px;
     padding-top: 32px;
+    font-weight: 500;
+    font-family: myFont-Medium;
 }
 
 .more {
@@ -145,6 +184,7 @@ input {
     font-size: 18px;
     font-weight: 600;
     padding: 24px 0;
+    font-family: myFont-Italic;
 }
 .more:hover{
     cursor: pointer;
@@ -155,6 +195,7 @@ input {
     margin: 0 auto;
     text-align: end;
     font-size: 15px;
+    font-family: myFont-Italic;
 }
 
 .paragraph-content-2,
@@ -163,9 +204,12 @@ input {
     margin: 0 auto;
     text-align: center;
     font-size: 15px;
+    font-family: myFont-Italic;
 }
 
-.paragraph-content-3 { font-size: 15px;}
+.paragraph-content-3 { 
+    font-family: myFont-Italic;
+    font-size: 15px;}
 
 .section-1 .more {
     text-align: end;
@@ -179,7 +223,7 @@ input {
 
 .section-2 .col-3 > div {
     width: calc(100% - 8px);
-    margin: 24px 8px;
+    margin: 80px 8px;
 }
 
 .img-section-2 {
@@ -191,6 +235,7 @@ input {
     font-size: 20px;
     font-weight: 400;
     text-align: center;
+    font-family: myFont-Medium;
 }
 
 .section-2 .derectory{
@@ -198,6 +243,7 @@ input {
     font-weight: 500;
     font-size: 10px;
     text-align: center;
+    font-family: myFont-Medium_Italic;
 }
 .derectory:hover {cursor: pointer;}
 
@@ -224,11 +270,13 @@ input {
 .cart-content .user-name {
     font-weight: 500;
     padding-bottom: 20px;
+    font-family: myFont-Medium;
 }
 
 .cart-content .user-comment{
     font-size: 12px;
     color: #ccc;
+    font-family: myFont-Italic;
 }
 .cart-content .user-rate {
     padding: 8px 0 38px;
@@ -244,6 +292,11 @@ input {
 .content-fotter {
     width: 80%;
     margin: 0 auto;
+    font-size: 15px!important;
+}
+
+.content-fotter p {
+    opacity: 0.6;
 }
 
 .logo-fotter {
@@ -261,18 +314,25 @@ hr {
 
 .header-fotter {
     font-weight: 400;
-    font-size: 20px;
     padding-bottom: 30px;
+    font-family: myFont-Medium;
 }
 
 .hight-line{
     font-weight: 400;
-    font-size: 20px;
+    font-family: myFont-Medium;
 }
 
 .content-fotter p {
     font-size: 14px;
     color: #ccc;
+    font-family: myFont-Regular;
+}
+
+.content-fotter span {
+    font-size: 14px;
+    color: #ccc;
+    font-family: myFont-Bold;
 }
 
 .icon-fotter {
@@ -299,6 +359,7 @@ hr {
     font-size: 24px;
     font-weight: 700;
     color: #fff;
+    font-family: myFont-Bold;
 }
 
 .purchase-fotter {
@@ -320,7 +381,7 @@ hr {
 .background-2{
     width: 720px;
     position: absolute;
-    top: -185px;
+    top: -134px;
     left: -418px;
 }
 
